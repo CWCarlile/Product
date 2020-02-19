@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100&display=swap" rel="stylesheet">
+   
+     
+</head>
+
+
+<body>
+ <main>
+    <section class="photo-nav nav shrink">
+      <a href="#" class="nav-link inactive">Photography</a>
+      <div class="hide">Hey look at that!</div>
+    </section>
+    <section class="ill-nav nav">
+      <a href="#" class="nav-link inactive">Illustration</a>
+      <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nisi, iusto aliquid similique doloremque in recusandae dolore nesciunt deserunt perspiciatis optio ullam ratione atque laborum assumenda mollitia quo reprehenderit inventore.</div>
+    </section>
+    <section class="painting-nav nav">
+      <a href="#" class="nav-link inactive">Painting</a>
+      <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nisi, iusto aliquid similique doloremque in recusandae dolore nesciunt deserunt perspiciatis optio ullam ratione atque laborum assumenda mollitia quo reprehenderit inventore.</div>
+    </section>
+    <section class="sculp-nav nav">
+      <a href="#" class="nav-link inactive">Sculpture</a>
+      <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nisi, iusto aliquid similique doloremque in recusandae dolore nesciunt deserunt perspiciatis optio ullam ratione atque laborum assumenda mollitia quo reprehenderit inventore.</div>
+    </section>
+    </main>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   
+    <script>
+
+  $('.nav-link').click(function(){
+    if ( $( this ).hasClass( "inactive" ) ) {
+      $(this).removeClass('inactive')
+      $(this).addClass('active')
+      $(this).parent().toggleClass('play')
+      $(this).next().toggleClass('hide')
+    } else {
+      $(this).addClass('inactive')
+      $(this).removeClass('active')
+      $(this).next().toggleClass('hide')
+      $(this).parent().toggleClass('play')
+      $(this).parent().toggleClass('shrink')
+    }
+  })
+
+
+</script>
+    
+    
+		
+		
+<!--     fixed position logo           -->
+      <div class="logo"><a href="index.html"><img src=img/Project_2.png width="20%"></a></div>
+   
+       
+      
+         
+</body>
