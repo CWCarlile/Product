@@ -13,7 +13,7 @@
 
 <body>
 
-
+<img class="flateath" src="img/dims.jpg">
 <div class="hit-area">
   <div class="hitbox" id="a-1"></div>
   <div class="hitbox" id="a-2"></div>
@@ -40,7 +40,7 @@
   <div class="hitbox" id="e-3"></div>
   <div class="hitbox" id="e-4"></div>
   <div class="hitbox" id="e-5" ></div>
-  <div class="hitbox" id="e-5" ></div>
+  <div class="hitbox" id="e-5" ></div> <div class="hitbox2" id="e-6" ></div>
   <div class="eye">
     <div class="pupil"></div>
   </div>
@@ -50,6 +50,10 @@
   <div class="eyelid"></div>
   <div class="eyelid"></div>
 </div>
+
+
+
+
 
 
 
@@ -74,9 +78,19 @@ height: 90%;
   width: 90px;
   height: 290px;
   float:left;
-    background-color:black;
-    border: .5px solid black;
+    background-color:transparent;
 }
+    
+    .hitbox2 {
+        width: 90px;
+  height: 110px;
+  position:fixed;
+        top:40%;
+        left:47%;
+    background-color:transparent;
+    border: .5px solid black;
+
+    }
 
 .eye {
   position: fixed;
@@ -107,8 +121,8 @@ height: 90%;
 }
 
 .eyelid {
-  width: 170px;
-  height: 150px;
+  width: 190px;
+  height: 165px;
   background-color: black;
   position: absolute;
   left: 35%;
@@ -148,52 +162,53 @@ height: 90%;
   -webkit-transform: rotate(10deg);
 }
 
-#b-2:hover ~ .eyelid {
-  -webkit-transform:  rotate(15deg);
+#e-6:hover ~ .eyelid {
+  -webkit-transform:  rotate(10deg);
 }
 
-#b-2:hover ~ .eyelid:nth-of-type(2n+1) {
-  -webkit-transform: rotate(-20deg);
+#e-6:hover ~ .eyelid:nth-of-type(2n+1) {
+  -webkit-transform: rotate(-10deg);
    
 }
+    
 
 #b-2:hover ~ .eye .pupil {
-    background-color: red;
+    background-color: black;
 }
 
 #b-3:hover ~ .eye .pupil {
-    background-color: red;
+    background-color: black;
 }
 #a-1:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(60deg) translate(-30px);
+  -webkit-transform: rotate(30deg) translate(-30px);
 }
 
 #a-2:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(80deg) translate(-30px);
+  -webkit-transform: rotate(40deg) translate(-30px);
 }
 
 #a-3:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(90deg) translate(-30px);
+  -webkit-transform: rotate(50deg) translate(-30px);
 }
 
 #a-4:hover ~.eye > .pupil {
-  -webkit-transform: rotate(100deg) translate(-30px);
+  -webkit-transform: rotate(60deg) translate(-30px);
 }
 
 #a-5:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(120deg) translate(-30px);
+  -webkit-transform: rotate(70deg) translate(-30px);
 }
 
 #b-1:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(50deg) translate(-25px);
-}
-
-#b-2:hover ~ .eye > .pupil:nth-of-type(2n+1) {
   -webkit-transform: rotate(80deg) translate(-25px);
 }
 
+#b-2:hover ~ .eye > .pupil:nth-of-type(2n+1) {
+  -webkit-transform: rotate(90deg) translate(-25px);
+}
+
 #b-3:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(70deg) translate(25px);
+  -webkit-transform: rotate(100deg) translate(-25px);
     }
 
 #b-4:hover ~.eye > .pupil {
@@ -205,15 +220,15 @@ height: 90%;
 }
 
 #c-1:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(0deg) translate(-25px);
+  -webkit-transform: rotate(140deg) translate(-25px);
 }
 
 #c-2:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(0deg) translate(-10px);
+  -webkit-transform: rotate(150deg) translate(-25px);
 }
 
 #c-3:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(0deg) translate(20px);
+  -webkit-transform: rotate(160deg) translate(-25px);
 }
 
 
@@ -233,43 +248,65 @@ height: 90%;
 }
 
 #d-2:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-70deg) translate(-25px);
+  -webkit-transform: rotate(-60deg) translate(-25px);
 }
 
 #d-3:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-90deg) translate(-25px);
+  -webkit-transform: rotate(-70deg) translate(-25px);
 }
 
 #d-4:hover ~.eye > .pupil {
-  -webkit-transform: rotate(-110deg) translate(-25px);
+  -webkit-transform: rotate(-80deg) translate(-25px);
 }
 
 #d-5:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-130deg) translate(-25px);
+  -webkit-transform: rotate(-90deg) translate(-25px);
 }
 
 #e-1:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-40deg) translate(-30px);
+  -webkit-transform: rotate(-100deg) translate(-30px);
 }
 
 #e-2:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-60deg) translate(-30px);
+  -webkit-transform: rotate(-110deg) translate(-30px);
 }
 
 #e-3:hover ~ .eye > .pupil {
-  -webkit-transform: rotate(-80deg) translate(-30px);
+  -webkit-transform: rotate(-120deg) translate(-30px);
 }
 
 #e-4:hover ~.eye > .pupil {
-  -webkit-transform: rotate(-100deg) translate(-30px);
+  -webkit-transform: rotate(-130deg) translate(-30px);
 }
 
 #e-5:hover ~ .eye > .pupil {
         
-  -webkit-transform: rotate(-120deg) translate(-30px);
+  -webkit-transform: rotate(-140deg) translate(-30px);
 }
+    #e-6:hover ~ .eye > .pupil {
+        
+  -webkit-transform: rotate(0deg) translate(30px);
+}
+    #e-6:hover ~ .eye .pupil {
+    background-color: red;
+}
+
     
+   #e-6:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+  -webkit-transform: rotate(0deg) translate(-35px);
+    }
   
+    
+    
+    
+    .flateath {
+        position:fixed;
+        height:25%;
+        width:25%;
+        top:67%;
+        
+        
+    }
     
     </style>
 
