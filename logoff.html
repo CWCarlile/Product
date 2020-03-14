@@ -15,6 +15,26 @@
 
 
 <body>
+    
+     <section>
+    <div class="scroll text1">
+       <div>
+            EARTH<span> is made up of elements. </span>Earth<span> is made up of elements.</span>
+       </div>
+       <div>
+            Earth<span> is made up of elements. </span>earth <span>is made up of elements. </span>
+       </div>
+    </div>
+<div class="scroll text2">
+       <div>
+            look around<span> each element has a purpose.</span>click and drag<span> keep the ecosystem in balance.</span>
+       </div>
+       <div>
+           look around<span> each element has a purpose.</span>click and drag<span>keep the ecosystem in balance.</span>
+       </div>
+    </div>
+  </section>
+    
 
     <div class="block1"> </div>
     
@@ -36,6 +56,81 @@
     
     <style>
         
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap');
+
+html,body{
+  
+  margin:0px;
+    padding:0px;
+    
+  font-family: 'Poppins', sans-serif;
+  background: pink;
+}
+
+section{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section .scroll{
+  width: 100%;
+  display: flex;
+}
+
+section .scroll div{
+  color: #000;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  font-size: 30px;
+  background: #fff;
+  white-space: nowrap;
+  font-weight: 900;
+  text-transform: uppercase;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+}
+
+section .scroll div:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+section .scroll div span{
+  -webkit-text-stroke: 1px #000;
+  color: transparent;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+
+section .scroll.text1{
+  transform: rotate(-90deg) translateY(600px) translateX(-200px);
+ 
+  width: 100%;
+}
+        section .scroll.text2{
+  transform: rotate(360deg) translateY(-100%) translateX(-200x);
+  width: 101%;
+}
+        
+/*      B L O C KS       */
         .block1 { 
             background-image:url(img/rosebloom.gif);
              background-position: center;
