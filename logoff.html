@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel = "shortcut icon" type="image/png" href="favicon.png"> 
      
 </head>
 
@@ -35,16 +36,29 @@
     </div>
   </section>
     
+    <div class="logo1"><a href="index.html"><img src=img/Artboard%201.png width="15%"></a></div>
+
 
     <div class="block1"> </div>
     
     <div class="block2"> </div>
+    <div class="block3"> </div>
+    <div class="block4"> </div>
+    <div class="block5"> </div>
+    
+<!--
+   
+    <div onmousedown="play()" class="block2" value="PLAY"> </div>
+     <audio id="audio" src="audio/water.mp3" ></audio>
     
     <div class="block3"> </div>
     
-     <div class="block4"> </div>   
+     <div onmousedown="play()" class="block4" value="PLAY"> </div>
+     <audio id="audio" src="audio/water.mp3" ></audio>
      
-     <div class="block5"> </div>
+     <div onmousedown="play()" class="block5" value="PLAY"> </div>
+     <audio id="audio" src="audio/water.mp3" ></audio>
+-->
      
      <div onmousedown="play()" class="block6" value="PLAY"> </div>
      <audio id="audio" src="audio/456440__inspectorj__bird-whistling-robin-single-13.wav" ></audio>
@@ -64,7 +78,8 @@ html,body{
     padding:0px;
     
   font-family: 'Poppins', sans-serif;
-  background: pink;
+    cursor: url(img/smile.png), auto;
+  
 }
 
 section{
@@ -121,12 +136,12 @@ section .scroll div span{
 }
 
 section .scroll.text1{
-  transform: rotate(-90deg) translateY(600px) translateX(-200px);
+  transform: rotate(-90deg) translateY(620px) translateX(-200px);
  
   width: 100%;
 }
         section .scroll.text2{
-  transform: rotate(360deg) translateY(-100%) translateX(-200x);
+  transform: rotate(360deg) translateY(-48px) translateX(-200px);
   width: 101%;
 }
         

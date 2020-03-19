@@ -8,10 +8,18 @@ html {
     display: block;
     position:fixed;
     right:5%;
-    top:5%
+    top:32%
     
 }
+
+ .logo1 img {
+    display: block;
+    position:fixed;
+    right:5%;
+    top:6%
+}
 body {
+    cursor: url(img/smile.png), auto;
     margin: 45px;
     margin-bottom:45px;
 }
@@ -44,7 +52,7 @@ div#inner-left-block-menu {
     border-left: 2px solid black;
     border-bottom: 6px solid black;
     border-top: 2px solid black;
-    height: 420px;
+    height: 400px;
     position: relative;
    
 }
